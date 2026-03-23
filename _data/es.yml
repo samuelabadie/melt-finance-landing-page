@@ -1,0 +1,24 @@
+lang: es
+lang_label: "ES"
+
+nav:
+  services: "Servicios"
+  about: "Acerca de"
+  how_it_works: "Cómo funciona"
+  cta: "Más información"
+
+hero:
+  headline: "Infraestructura de spot trading para activos reales en Hyperliquid"
+  subheadline_html: "Melt es el <strong>mercado spot nativo</strong> para activos del mundo real en Hyperliquid. Acciones y materias primas tokenizadas, negociadas en un <strong class=\"underline\">libro de órdenes en vivo</strong> directamente desde tu wallet, 24/7."
+  cta_primary: "Abrir app"
+  cta_secondary: "Más información"
+
+lang_switcher:
+  en: "EN"
+  fr: "FR"
+  es: "ES"
+
+socials:
+  x: "https://x.com/meltfinance"
+  discord: "https://discord.gg/meltfinance"
+  linkedin: "https://linkedin.com/company/meltfinance"

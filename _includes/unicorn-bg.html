@@ -1,0 +1,59 @@
+<!-- ============================================================
+     UNICORN STUDIO BACKGROUND
+     Pour changer d'animation : remplace uniquement data-us-project="..."
+     par le nouveau project ID Unicorn Studio.
+============================================================ -->
+<div id="unicorn-outer" class="absolute inset-0 z-0 overflow-hidden pointer-events-none" style="opacity:0; transition: opacity 1.2s ease;">
+  <div id="unicorn-scaler" style="position:absolute; top:50%; left:50%; width:1440px; height:900px; transform-origin:center center; transform:translate(-50%,-50%) scale(1);">
+    <div style="width:1440px; height:900px" data-us-project="Ivxq4qMo4hCED1aFipC8"></div>
+  </div>
+</div>
+
+<script>
+  function scaleUnicorn() {
+    var scaler = document.getElementById('unicorn-scaler');
+    if (!scaler) return;
+    var scale = Math.max(window.innerWidth / 1440, window.innerHeight / 900);
+    scaler.style.transform = 'translate(-50%, -50%) scale(' + scale + ')';
+  }
+  scaleUnicorn();
+  window.addEventListener('resize', scaleUnicorn, { passive: true });
+
+  function initUnicorn() {
+    var result = UnicornStudio.init();
+    // init() returns a Promise — fade in once the scene is ready
+    if (result && typeof result.then === 'function') {
+      result.then(function() {
+        document.getElementById('unicorn-outer').style.opacity = '1';
+      });
+    } else {
+      // Fallback: no promise support, just fade in after a short delay
+      setTimeout(function() {
+        document.getElementById('unicorn-outer').style.opacity = '1';
+      }, 800);
+    }
+  }
+
+  (function() {
+    var u = window.UnicornStudio;
+    if (u && u.init) {
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', initUnicorn);
+      } else {
+        initUnicorn();
+      }
+    } else {
+      window.UnicornStudio = { isInitialized: false };
+      var i = document.createElement('script');
+      i.src = 'https://cdn.jsdelivr.net/gh/hiunicornstudio/unicornstudio.js@v2.1.4/dist/unicornStudio.umd.js';
+      i.onload = function() {
+        if (document.readyState === 'loading') {
+          document.addEventListener('DOMContentLoaded', initUnicorn);
+        } else {
+          initUnicorn();
+        }
+      };
+      (document.head || document.body).appendChild(i);
+    }
+  })();
+</script>

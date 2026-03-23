@@ -1,0 +1,27 @@
+title: Melt Finance
+description: "Melt Finance — simplify your financial future"
+baseurl: ""
+url: ""
+
+# Build
+markdown: kramdown
+permalink: pretty
+
+# Exclude from build
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - package.json
+  - package-lock.json
+  - PRD.md
+  - README.md
+
+# Default language
+default_lang: en
+
+# Supported languages
+languages:
+  - en
+  - fr
+  - es  # Replace with your 3rd language code
