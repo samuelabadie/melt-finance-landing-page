@@ -15,11 +15,12 @@
     <!-- HEADLINE -->
     <div class="text-center md:text-left md:absolute md:top-[18%] md:left-[100px] md:max-w-[65%] w-full">
       <h1 id="hero-headline" class="text-[2rem] sm:text-4xl md:text-5xl lg:text-[3.5rem] xl:text-[4rem] uppercase leading-[1.05] tracking-tight text-melt-black mb-6">
-        <span class="block">{{ t.hero.headline_line1 }}</span>
-        <span class="block">{{ t.hero.headline_line2 }}</span>
-        <span class="block">{{ t.hero.headline_line3 }}</span>
+        <span class="block headline-line">{{ t.hero.headline_line1 }}</span>
+        <span class="hidden md:block headline-line">{{ t.hero.headline_line2 }}</span>
+        <span class="block md:hidden headline-line">{{ t.hero.headline_line2_mobile }}</span>
+        <span class="block headline-line">{{ t.hero.headline_line3 }}</span>
       </h1>
-      <a id="hero-cta-primary" href="#" class="btn-liquid inline-flex items-center justify-center px-[28px] rounded-[6px] text-[14px] font-semibold bg-melt-black text-white" style="opacity:0; height: 40px;">
+      <a id="hero-cta-primary" href="#" class="btn-liquid inline-flex items-center justify-center px-5 md:px-[28px] rounded-[6px] text-[12px] md:text-[14px] font-semibold bg-melt-black text-white h-[34px] md:h-[40px]" style="opacity:0;">
         <span class="btn-blob-inner"><span class="btn-blob-group"><span class="btn-blob"></span><span class="btn-blob"></span><span class="btn-blob"></span><span class="btn-blob"></span></span></span>
         {{ t.hero.cta_primary }}
       </a>
@@ -38,7 +39,7 @@
         <span class="absolute w-1.5 h-1.5 rounded-[2px] bg-melt-black/25" style="bottom:15px; left:15px;"></span>
         <span class="absolute w-1.5 h-1.5 rounded-[2px] bg-melt-black/25" style="bottom:15px; right:15px;"></span>
         <p class="text-sm text-melt-black/80 leading-relaxed mb-4">{{ t.hero.subheadline_html }}</p>
-        <a href="#" class="inline-flex items-center px-5 py-2.5 rounded-[10px] bg-melt-black text-melt-white text-sm font-semibold hover:bg-melt-black/80 transition-colors duration-200">
+        <a href="{{ t.socials.gitbook }}" target="_blank" rel="noopener noreferrer" class="inline-flex items-center px-4 py-2 rounded-[8px] bg-melt-black text-melt-white text-[12px] md:text-sm font-semibold hover:bg-melt-black/80 transition-colors duration-200">
           {{ t.hero.cta_secondary }}
         </a>
       </div>
@@ -85,7 +86,7 @@
 
         <!-- BUTTONS -->
         <div id="card-btn-area" class="flex flex-wrap items-center gap-3" style="opacity:0;">
-          <a href="#" class="inline-flex items-center px-5 py-2 rounded-[10px] bg-melt-black text-melt-white text-sm font-semibold hover:bg-melt-black/80 transition-colors duration-200">
+          <a href="{{ t.socials.gitbook }}" target="_blank" rel="noopener noreferrer" class="inline-flex items-center px-5 py-2 rounded-[10px] bg-melt-black text-melt-white text-sm font-semibold hover:bg-melt-black/80 transition-colors duration-200">
             {{ t.hero.cta_secondary }}
           </a>
           <!-- <a href="#" class="inline-flex items-center px-5 py-2.5 rounded-[10px] border border-melt-black/30 text-sm font-semibold text-melt-black hover:bg-melt-black/5 transition-colors duration-200">Autre bouton</a> -->
@@ -121,7 +122,7 @@
     gsap.from('#navbar', { opacity: 0, duration: 1.2, ease: 'power2.out' });
 
     var h1 = document.getElementById('hero-headline');
-    var lines = h1.querySelectorAll('span.block');
+    var lines = h1.querySelectorAll('.headline-line');
 
     lines.forEach(function(line) {
       var words = line.innerText.trim().split(/\s+/);

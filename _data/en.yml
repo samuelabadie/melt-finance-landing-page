@@ -10,6 +10,7 @@ nav:
 hero:
   headline_line1: "Spot trading infrastructure"
   headline_line2: "for real-world assets"
+  headline_line2_mobile: "for RWAs"
   headline_line3: "on Hyperliquid"
   subheadline_html: "Melt is the <strong>native spot market</strong> for real-world assets on Hyperliquid. Tokenized stocks and commodities, traded on a <strong class=\"underline\">live orderbook</strong> directly from your wallet, 24/7."
   cta_primary: "Start Trading"
