@@ -48,7 +48,6 @@
       background-color: #F3FDFF;
       color: #141A1A;
       font-family: 'Geist', system-ui, sans-serif;
-      overflow-x: hidden;
     }
 
     /* Nav keeps its gradient on scroll */
@@ -130,6 +129,8 @@
       </filter>
     </defs>
   </svg>
+
+  {% include unicorn-bg.html %}
 
   {% assign t = site.data[page.lang] %}
   {% include nav.html %}

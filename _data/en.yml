@@ -12,7 +12,7 @@ hero:
   headline_line2: "for real-world assets"
   headline_line2_mobile: "for RWAs"
   headline_line3: "on Hyperliquid"
-  subheadline_html: "Melt is the <strong>native spot market</strong> for real-world assets on Hyperliquid. Tokenized stocks and commodities, traded on a <strong class=\"underline\">live orderbook</strong> directly from your wallet, <strong>24/7.</strong>"
+  subheadline_html: "Melt is the <strong>native spot market</strong> for real-world assets on Hyperliquid. Tokenized stocks and commodities, traded on a <strong>live orderbook</strong> directly from your wallet, <strong>24/7.</strong>"
   cta_primary: "Start Trading"
   cta_secondary: "Learn more"
 
@@ -20,6 +20,54 @@ lang_switcher:
   en: "EN"
   fr: "FR"
   es: "ES"
+
+protocol:
+  label: "Protocol"
+  title: "Melt brings real&#8209;world assets to&#160;Hyperliquid."
+  description_html: "Melt is the first protocol to bring real-world assets to a live central limit orderbook. Bridge from any chain, trade stocks, indices and commodities with real depth and real execution, seven days a week, around the clock."
+  cta: "Launch App"
+  cards:
+    - title: "Spot on Hyperliquid"
+      text: "Trade real-world assets natively on Hyperliquid spot, each <strong>backed 1:1 by Ondo Finance</strong> with the underlying held in <strong>custody at the NYSE.</strong>"
+    - title: "The Bridge"
+      text: "Bridge any token from any chain directly into <strong>mAssets,</strong> or swap into them seamlessly via the integrated <strong>bridge-swap engine.</strong>"
+    - title: "Real-World Assets"
+      text: "Stocks, indices and commodities now tradeable on-chain, <strong>24/7.</strong> No brokerage. No market hours. No middleman."
+
+footer:
+  title: "Infrastructure for real&#8209;world assets on Hyperliquid"
+  description_html: "Melt is the <strong>native spot market</strong> for real-world assets on Hyperliquid. Tokenized stocks and commodities, traded on a <strong class='underline'>live orderbook</strong> directly from your wallet, <strong>24/7.</strong>"
+  columns:
+    - title: "Protocol"
+      links:
+        - label: "Launch App"
+          url: "#"
+        - label: "Documentation"
+          url: "https://docs.melt.finance/protocol/introduction"
+        - label: "Bridge"
+          url: "#"
+    - title: "Resources"
+      links:
+        - label: "Gitbook"
+          url: "https://docs.melt.finance/protocol/introduction"
+        - label: "Brand Kit"
+          url: "#"
+        - label: "FAQ"
+          url: "#"
+    - title: "Community"
+      links:
+        - label: "X (Twitter)"
+          url: "https://x.com/Meltfinance"
+        - label: "Telegram"
+          url: "https://t.me/MeltFinance"
+        - label: "Discord"
+          url: "#"
+    - title: "Legal"
+      links:
+        - label: "Terms of Use"
+          url: "#"
+        - label: "Privacy Policy"
+          url: "#"
 
 socials:
   x: "https://x.com/Meltfinance"
