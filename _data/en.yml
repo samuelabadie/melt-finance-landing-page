@@ -36,23 +36,23 @@ protocol:
 
 footer:
   title: "The market never closes again."
-  description_html: "Melt brings the missing piece to <strong>Hyperliquid.</strong> <strong>Built for traders</strong> who don't stop when the bell rings."
+  description_html: "Melt brings the missing piece to Hyperliquid. <strong>Built for traders</strong> who don't stop when the bell rings."
   columns:
-    - title: "Protocol"
+    - title: "Navigation"
+      links:
+        - label: "Protocol"
+          url: "#"
+        - label: "Statistics"
+          url: "#"
+        - label: "Market"
+          url: "#"
+    - title: "Resources"
       links:
         - label: "Launch App"
           url: "#"
         - label: "Documentation"
           url: "https://docs.melt.finance/protocol/introduction"
-        - label: "Bridge"
-          url: "#"
-    - title: "Resources"
-      links:
-        - label: "Gitbook"
-          url: "https://docs.melt.finance/protocol/introduction"
         - label: "Brand Kit"
-          url: "#"
-        - label: "FAQ"
           url: "#"
     - title: "Community"
       links:
